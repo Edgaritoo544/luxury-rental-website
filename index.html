@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeDrive - Luxury Car Rental</title>
+    <link href="luxcar.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-text">LUXEDRIVE</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title"> Drive Your <span class="hero-subtitle">Dream Car</span> </h1>
+                <p class="hero-text"> Experience unparalleled luxury and performance with our curated collection of the world's finest automobiles right here in Bakersfield. </p>
+                <a href="#fleet" class="btn btn-primary">Explore Fleet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Discover our most sought-after luxury vehicles</p>
+            </div>
+            <div id="featured-cars" class="car-grid"></div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Our Fleet</h1>
+                <p class="section-subtitle">Explore our exclusive collection of luxury vehicles</p>
+            </div>
+            <div id="all-cars" class="car-grid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h1 class="section-title">About LuxeDrive</h1>
+            <div class="about-content">
+                <p>LuxeDrive is a newly created luxury car rental company located in Bakersfield—a place where many people may not get to feel that type of luxury for a decent price.</p>
+                <p>The fleet right now is small but powerful, with a nice range of some pretty swift cars that you might like to drive around.</p>
+                <p>As a kid, I always wanted to be able to drive a sports car for at least one day, so being able to do that for the kids of today is something that I don't regret.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            <div class="contact-info">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="(661) 000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Car of Interest</label>
+                        <select required>
+                            <option value="" disabled selected>Select a car</option>
+                            <option value="gtr">Nissan GT-R</option>
+                            <option value="escalade">Cadillac Escalade</option>
+                            <option value="7series">BMW 7 Series</option>
+                            <option value="ftype">Jaguar F-Type</option>
+                            <option value="etron">Audi RS e-tron GT</option>
+                            <option value="modelx">Tesla Model X</option>
+                            <option value="sclass">Mercedes-Maybach S-Class</option>
+                            <option value="911">Porsche 911 Turbo S</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                </form>
+
+                <div class="contact-item" style="margin-top: 2rem;">
+                    <p style="color: #94a3b8;">Email: contact@luxedrive.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 LuxeDrive Bakersfield. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="luxcar.js"></script>
+</body>
+</html>
